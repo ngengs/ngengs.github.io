@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% include head.html %}
+<body>
+{% include header.html %}
+
+<main id="wrapper">
+    <div class="container pb-5">
+        {{ content }}
+        <div class="mb-3 mt-5 text-center">
+            <a href="https://github.com/{{ site.github_username}}" class="btn btn-outline-primary btn-lg btn-other-project">Other
+                Project</a>
+        </div>
+    </div>
+</main>
+
+{% include footer.html%}
+</body>
+</html>

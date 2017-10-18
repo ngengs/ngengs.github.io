@@ -1,0 +1,61 @@
+#header {
+  .navbar {
+    border-bottom: 0.125rem solid $color-primary;
+    background-color: #fff;
+    .logo-font {
+      font-size: $navbar-logo-size;
+      height: $navbar-logo-size;
+      width: $navbar-logo-size * 2;
+
+      > .ngic {
+        margin-top: $navbar-logo-size / 10;
+      }
+    }
+
+    .navbar-brand {
+      &:hover, &:focus {
+        .change-color {
+          color: $color-primary;
+        }
+      }
+    }
+  }
+}
+#big-pannel {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background: $big-panel-background-color;
+  background-image: url('../assets/images/big-panel-background.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+
+  .logo-font {
+    font-size: $big-panel-logo-size;
+    height: $big-panel-logo-size;
+    > .ngic {
+      margin-left: -#{$big-panel-logo-size};
+    }
+
+    > .ngic-logo-back {
+      color: $color-primary;
+    }
+
+    > .ngic-logo-arrow {
+      color: $color-primary;
+    }
+  }
+  .change-color {
+    transition: .5s ease color;
+  }
+  &:hover, &:focus {
+    .logo-font {
+      > .ngic {
+        color: #fff;
+      }
+    }
+    .change-color {
+      color: $color-primary;
+    }
+  }
+}

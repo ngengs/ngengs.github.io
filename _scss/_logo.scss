@@ -1,0 +1,8 @@
+.logo-font {
+  position: relative;
+
+  > .ngic {
+    position: absolute;
+    transition: .2s ease color;
+  }
+}

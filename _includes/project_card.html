@@ -1,0 +1,46 @@
+<a href="{{ include.link }}" class="project-card d-block mb-5" target="_blank">
+    <div class="project-card__header">
+        <div class="row">
+            {% if include.image %}
+            <div class="col-8 col-lg-7 align-self-center"><h3>{{ include.name }}</h3></div>
+            <div class="col-4 col-lg-5 align-self-center text-right">
+                <div class="project-card__img rounded-circle float-right">
+                    <img class="img img-fluid" src="{{ include.image | absolute_url }}">
+                </div>
+            </div>
+            {% else %}
+            <div class="col-12 align-self-center"><h3>{{ include.name }}</h3></div>
+            {% endif %}
+        </div>
+    </div>
+    <div class="project-card__body">
+        {% if include.language %}
+        <div class="row">
+            {% for lang in include.language %}
+            <div class="col-2">
+                <div class="category category--{{ lang }} rounded-circle mb-1 mt-1" title="{{ lang | capitalize }}">
+                    {% if lang == "android" %}
+                    <i class="mdi mdi-android align-middle"></i>
+                    {% elsif lang == "css" %}
+                    <i class="mdi mdi-language-css3 align-middle"></i>
+                    {% elsif lang == "html" %}
+                    <i class="mdi mdi-language-html5 align-middle"></i>
+                    {% else if lang == "php" %}
+                    <i class="mdi mdi-language-php align-middle"></i>
+                    {% else %}
+                    <i class="mdi mdi-code-braces align-middle"></i>
+                    {% endif %}
+                    <span class="sr-only">{{ lang | capitalize }}</span>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        {% endif %}
+        <div class="project-card__description mt-1">
+            {{ include.description }}
+        </div>
+    </div>
+    <div class="project-card__footer">
+        View More
+    </div>
+</a>

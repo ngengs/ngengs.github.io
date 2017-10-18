@@ -1,0 +1,36 @@
+.footer {
+  &__logo {
+    height: $footer-logo-size;
+    font-size: $footer-logo-size;
+    @media (max-width: 767px) {
+      .ngic {
+        margin-left: -#{$footer-logo-size};
+      }
+    }
+  }
+  &__social {
+    font-size: $footer-socmed-size;
+  }
+}
+
+#footer {
+  background-color: $footer-background;
+  position: relative;
+  border-top: 0.1rem solid $color-primary;
+  color: $footer-text-color;
+
+  a {
+    color: $footer-text-color;
+    transition: .5s ease color;
+    &:hover, &:focus {
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+
+  &:hover {
+    .change-color {
+      color: $color-primary;
+    }
+  }
+}

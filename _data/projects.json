@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Filkom News Reader Android",
+    "category": "mobile",
+    "language": "android",
+    "desc": "Android client for receive notification, read news and announcement from Filkom News Reader Server",
+    "image": "/assets/images/project/filkom-news-reader.png",
+    "link": "https://github.com/ngengs/filkom-news-reader_application-android"
+  },
+  {
+    "name": "Filkom News Reader Server",
+    "category": "web",
+    "language": "php",
+    "desc": "Server for scrapping data from Filkom, provide API and push notification to Filkom News Reader client",
+    "image": "/assets/images/project/filkom-news-reader.png",
+    "link": "http://filkom-news-reader.ngengs.com"
+  },
+  {
+    "name": "Ceki Note",
+    "category": "mobile",
+    "language": "android",
+    "desc": "Android application to log your score playing ceki (cards game)",
+    "image": "/assets/images/project/ceki-note.png",
+    "link": "https://github.com/ngengs/cekinote_android"
+  },
+  {
+    "name": "Bootstrap Grid Flexbox",
+    "category": "web",
+    "language": ["css", "html"],
+    "desc": "Give Bootstrap 3 power to use flexbox for the grid system",
+    "image": null,
+    "link": "https://ngengs.github.io/bootstrap-grid-flexbox/"
+  },
+  {
+    "name": "Popular Movies",
+    "category": "udacity",
+    "language": "android",
+    "desc": "Application from udacity course to show you popular movies or top rated movies from The Movies Database (TMDb)",
+    "image": "/assets/images/project/popular-movies.png",
+    "link": "https://github.com/ngengs/android_Popular-Movies"
+  },
+  {
+    "name": "Baking Apps",
+    "category": "udacity",
+    "language": "android",
+    "desc": "Application from udacity course to show you recipes list with video tutorial",
+    "image": "/assets/images/project/baking-apps.png",
+    "link": "https://github.com/ngengs/android_Baking-Apps"
+  }
+]

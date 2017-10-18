@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Mobile",
+    "desc": "Project for native or mobile application and library",
+    "key": "mobile"
+  },
+  {
+    "name": "Web",
+    "desc": "Project for website library or code of the website",
+    "key": "web"
+  },
+  {
+    "name": "Udacity",
+    "desc": "Project from Udacity course",
+    "key": "udacity"
+  }
+]

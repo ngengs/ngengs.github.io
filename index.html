@@ -1,0 +1,16 @@
+---
+layout: home
+---
+{% for category in site.data.project_category %}
+<h2 class="text-center pt-5">{{ category.name }}</h2>
+<p class="text-center pt-3 pb-3">{{ category.desc }}</p>
+{% assign project = site.data.projects | where:"category",category.key %}
+<div class="row justify-content-md-center align-item-stretch">
+    {% for item in project %}
+    <div class="col-md-6 col-lg-4 pb-3">
+        {% include project_card.html name=item.name image=item.image link=item.link description=item.desc
+        language=item.language %}
+    </div>
+    {% endfor %}
+</div>
+{% endfor %}
