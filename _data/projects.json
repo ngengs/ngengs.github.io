@@ -24,6 +24,14 @@
     "link": "https://github.com/ngengs/cekinote_android"
   },
   {
+    "name": "WhatsDirect",
+    "category": "mobile",
+    "language": "android",
+    "desc": "Android application to direct send message with phone number at WhatsApp without save number to contact",
+    "image": "/assets/images/project/whatsdirect.png",
+    "link": "https://github.com/ngengs/WhatsDirect_android"
+  },
+  {
     "name": "NG Style Builder",
     "category": "web",
     "language": "nodejs",
